@@ -17,7 +17,6 @@ class ViewController: UIViewController {
         var myURL = NSURL(string: "http://sportiva.shueisha.co.jp/clm/baseball/entry_img/0610miura-001.jpg")
         var myData = NSData(contentsOfURL: myURL!)
         var myImage = UIImage(data: myData!)
-        
         var imgPath = NSBundle.mainBundle().pathForResource("0610miura-001", ofType: "jpg")
         
         myImageView.image = myImage
@@ -29,7 +28,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
